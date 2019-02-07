@@ -14,12 +14,12 @@ Copy this file to your project and run source on it.
 var <- dataset$new()
 
 #if you have an file with x and y columns
-file <- read.csv(myFile.csv)
+file <- read.csv("myFile.csv")
 var <- dataset$new(x=file$y, y=file$y)
 var$splitData() #for data split
 
 #if you have an file with x and y columns
-var <- dataset$new(x=file$y, y=file$y, bias=TRUE)
+var <- dataset$new(x=file$x, y=file$y, bias=TRUE)
 var$splitData() #for data split and bias add on xTrain
 
 ```
