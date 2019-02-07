@@ -15,7 +15,7 @@ var <- dataset$new()
 
 #if you have an file with x and y columns
 file <- read.csv("myFile.csv")
-var <- dataset$new(x=file$y, y=file$y)
+var <- dataset$new(x=file$x, y=file$y)
 var$splitData() #for data split
 
 #if you have an file with x and y columns
